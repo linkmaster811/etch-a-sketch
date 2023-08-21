@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sketch</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
     <div class="flex-container">
@@ -13,10 +12,11 @@
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
+                <button onclick ="changeColor('black')">Black</button>
+                <button onclick ="changeColor('white')" >Rubber</button>
+                <button onclick ="changeColor('gray')" >Gray</button>
+                <button onclick ="changeColor('random')">Random</button>
+                <button onclick ="resetBoard()">Reset</button>
             </div>
             <div>
                 <input type="text" 
